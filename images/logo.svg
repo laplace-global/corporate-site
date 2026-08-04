@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" width="320" height="100">
+  <text x="0" y="70" font-family="Georgia, 'Garamond', serif" font-size="70" fill="#ffffff">Laplace</text>
+  <g transform="translate(272,20) scale(0.42)">
+    <path d="M 0,-52 C 7,-15 15,-7 52,0 C 15,7 7,15 0,52 C -7,15 -15,7 -52,0 C -15,-7 -7,-15 0,-52 Z" fill="#81D8D0"/>
+  </g>
+</svg>

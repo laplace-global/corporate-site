@@ -1,9 +1,31 @@
-// Smooth scroll behavior for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+// Mobile nav toggle
+const navToggle = document.querySelector('.nav-toggle');
+const navMenu = document.querySelector('.nav-menu');
+if (navToggle && navMenu) {
+  navToggle.addEventListener('click', function () {
+    const isOpen = navMenu.classList.toggle('open');
+    navToggle.classList.toggle('open', isOpen);
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+  navMenu.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      navMenu.classList.remove('open');
+      navToggle.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
+
+// Smooth scroll behavior for same-page anchor links
+const currentPage = location.pathname.split('/').pop() || 'index.html';
+document.querySelectorAll('a[href*="#"]').forEach(anchor => {
+  const href = anchor.getAttribute('href');
+  const [page, hash] = href.split('#');
+  if (!hash || (page && page !== currentPage)) return;
   anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
+    const target = document.getElementById(hash);
     if (target) {
+      e.preventDefault();
       target.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
@@ -47,7 +69,7 @@ window.addEventListener('scroll', function () {
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
   if (scrollTop > 100) {
-    header.style.boxShadow = '0 2px 10px rgba(0, 217, 196, 0.1)';
+    header.style.boxShadow = '0 2px 10px rgba(129, 216, 208, 0.1)';
   } else {
     header.style.boxShadow = 'none';
   }
