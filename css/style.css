@@ -46,10 +46,10 @@ body {
   width: 100%;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
+.logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
 }
 
 .nav-menu {
@@ -266,16 +266,22 @@ body {
 }
 
 .news-item {
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   border-bottom: 1px solid var(--border-color);
   display: grid;
-  grid-template-columns: 100px auto;
+  grid-template-columns: 100px 1fr;
   gap: 2rem;
   align-items: start;
 }
 
+.news-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .news-date {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--text-dark);
   font-weight: 500;
 }
@@ -284,10 +290,10 @@ body {
   display: inline-block;
   background: rgba(0, 217, 196, 0.1);
   color: var(--accent-color);
-  padding: 0.25rem 0.75rem;
-  border-radius: 4px;
-  font-size: 0.8rem;
-  margin-bottom: 0.5rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  width: fit-content;
 }
 
 .news-item p {
@@ -433,15 +439,20 @@ body {
 
 .ceo-profile {
   display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 3rem;
+  grid-template-columns: 1fr;
+  gap: 2rem;
   align-items: start;
 }
 
-.ceo-profile img {
+.ceo-image {
+  max-width: 200px;
+  margin-bottom: 1rem;
+}
+
+.ceo-image img {
   width: 100%;
   border-radius: 8px;
-  aspect-ratio: 3/4;
+  aspect-ratio: auto;
   object-fit: cover;
 }
 

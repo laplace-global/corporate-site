@@ -13,7 +13,9 @@
       "Bash(git commit *)",
       "Bash(git push *)",
       "Bash(cp \"/Users/yh/Downloads/Hero_video_desktop_corporate.mp4\" \"/Users/yh/Downloads/export/videos/\")",
-      "Bash(cp \"/Users/yh/Downloads/Hero_video_desktop_corporate.mp4\" \"/Users/yh/Downloads/export/videos/hero.mp4\")"
+      "Bash(cp \"/Users/yh/Downloads/Hero_video_desktop_corporate.mp4\" \"/Users/yh/Downloads/export/videos/hero.mp4\")",
+      "Bash(cp /Users/yh/Downloads/Laplace_logo_transparent.png /Users/yh/Downloads/export/images/logo.png)",
+      "Bash(cp /Users/yh/Downloads/Profile_1.jpg /Users/yh/Downloads/export/images/ceo-profile.jpg)"
     ]
   }
 }
