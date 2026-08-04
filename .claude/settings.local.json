@@ -9,7 +9,11 @@
       "Bash(git ls-remote *)",
       "Bash(git init *)",
       "Bash(git remote *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(cp \"/Users/yh/Downloads/Hero_video_desktop_corporate.mp4\" \"/Users/yh/Downloads/export/videos/\")",
+      "Bash(cp \"/Users/yh/Downloads/Hero_video_desktop_corporate.mp4\" \"/Users/yh/Downloads/export/videos/hero.mp4\")"
     ]
   }
 }
