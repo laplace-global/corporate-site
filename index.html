@@ -10,26 +10,26 @@
   <!-- Header -->
   <header class="header">
     <nav class="navbar">
-      <div class="logo">Laplace</div>
+      <div class="logo">Laplace<span class="logo-star">✦</span></div>
       <ul class="nav-menu">
         <li><a href="#news">お知らせ</a></li>
         <li><a href="#business">事業内容</a></li>
         <li><a href="#partnership">パートナーシップ</a></li>
         <li><a href="#ceo">代表挨拶</a></li>
         <li><a href="#company">会社概要</a></li>
-        <li><a href="#contact" class="btn-contact">お問い合わせ</a></li>
       </ul>
+      <a href="#contact" class="btn-contact">お問い合わせ</a>
     </nav>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <video autoplay muted loop class="hero-video">
+    <video autoplay muted loop playsinline class="hero-video">
       <source src="videos/hero.mp4" type="video/mp4">
     </video>
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <p class="hero-subtitle">CROSS-BORDER REAL ESTATE RWA</p>
+      <p class="hero-subtitle">— CROSS-BORDER REAL ESTATE RWA</p>
       <h1 class="hero-title">海外不動産を<br>誰もが所有できる資産に。</h1>
       <p class="hero-text">Own the world for everyone.</p>
       <p class="hero-description">
@@ -41,40 +41,38 @@
         <button class="btn btn-secondary">事業内容を見る →</button>
       </div>
     </div>
-  </section>
-
-  <!-- Stats Section -->
-  <section class="stats">
-    <div class="stat-item">
-      <div class="stat-value">$900M+</div>
-      <div class="stat-label">契約パイプライン総額</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-value">5拠点</div>
-      <div class="stat-label">UAE / マレーシア / 日本</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-value">10+</div>
-      <div class="stat-label">受賞・採択実績</div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-value">$900M+</div>
+        <div class="stat-label">契約・パイプライン総額</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">3拠点</div>
+        <div class="stat-label">UAE / マレーシア / 日本</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">10+</div>
+        <div class="stat-label">受賞・採択実績</div>
+      </div>
     </div>
   </section>
 
   <!-- News Section -->
   <section id="news" class="section news">
     <div class="section-header">
-      <h2>NEWS / 01</h2>
-      <a href="#" class="section-link">お知らせ一覧 →</a>
+      <h2>— NEWS / 01</h2>
+      <a href="#" class="section-link">お知らせ一覧へ →</a>
     </div>
     <div class="news-list">
       <article class="news-item">
         <div class="news-date">2026.07.15</div>
         <div class="news-tag">登壇</div>
-        <p>東京大学ブロックチェーンノベーション寄附講座にて代表・廣田裕介が講師として登壇</p>
+        <p>東京大学ブロックチェーンイノベーション寄附講座にて代表・廣田裕介が講師として登壇</p>
       </article>
       <article class="news-item">
         <div class="news-date">2026.06.15</div>
         <div class="news-tag">プレス</div>
-        <p>株式会社UK信託と海外不動産の日本展開における戦略的パートナーシップを締結</p>
+        <p>株式会社UK信託と海外不動産の日本展開において戦略的パートナーシップを締結</p>
       </article>
       <article class="news-item">
         <div class="news-date">2026.05.27</div>
@@ -84,7 +82,12 @@
       <article class="news-item">
         <div class="news-date">2026.04.30</div>
         <div class="news-tag">プレス</div>
-        <p>Christie's International Real Estate Dubai と$400M規模の戦略的パートナーシップを締結</p>
+        <p>Christie's International Real Estate Dubaiと$400M規模の戦略的パートナーシップを締結</p>
+      </article>
+      <article class="news-item">
+        <div class="news-date">2026.04.07</div>
+        <div class="news-tag">登壇</div>
+        <p>「XRP Tokyo 2026」(TEAMZ SUMMIT)にて代表・廣田裕介がRippleとのセッションに登壇</p>
       </article>
     </div>
   </section>
@@ -94,38 +97,131 @@
     <div class="section-header">
       <h2>BUSINESS / 02</h2>
     </div>
-    <div class="business-content">
-      <div class="business-text">
-        <h3>3つの領域で、不動産RWAの実行を支える</h3>
-        <p>ソーシングから金融商品化、技術基盤の提供まで、各分野のプレイヤーと連携しながら推進しています。</p>
-      </div>
-      <div class="business-image">
-        <img src="images/business-platform.jpg" alt="Platform Overview" loading="lazy">
-      </div>
+    <div class="section-intro">
+      <h3>3つの領域で、不動産RWAの実行を支える</h3>
+      <p>ソーシングから金融商品化、技術基盤の提供まで、各分野のプレイヤーと連携しながら推進しています。</p>
     </div>
-  </section>
 
-  <!-- Platform Section -->
-  <section class="section platform">
-    <div class="section-header">
-      <h2>01 - PLATFORM</h2>
+    <!-- Platform Sub-section -->
+    <div class="subsection platform-block">
+      <div class="mockup-card app-mockup">
+        <div class="mockup-titlebar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="mockup-url">app.laplace.io</span>
+        </div>
+        <div class="app-body">
+          <div class="app-sidebar">
+            <div class="sidebar-item active">物件一覧</div>
+            <div class="sidebar-item">投資家管理</div>
+            <div class="sidebar-item">KYC審査</div>
+            <div class="sidebar-item">分配管理</div>
+            <div class="sidebar-item">レポート</div>
+          </div>
+          <div class="app-main">
+            <h4>Dubai Marina Residence</h4>
+            <p class="app-sub">信託受益権トークン / DMR-001</p>
+            <div class="app-chart-row">
+              <div class="mini-bars">
+                <span style="height:35%"></span><span style="height:65%"></span><span style="height:50%"></span><span style="height:80%"></span>
+              </div>
+              <div class="progress-box">
+                <div class="progress-top">
+                  <span class="progress-label">調達進捗</span>
+                  <span class="progress-value">62%</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width:62%"></div></div>
+                <span class="progress-sub">$12.4M / $20.0M</span>
+              </div>
+            </div>
+            <div class="app-stats-list">
+              <div class="app-stat-row"><span>投資家</span><span>248名</span></div>
+              <div class="app-stat-row"><span>KYC承認済</span><span class="accent">231名</span></div>
+              <div class="app-stat-row"><span>想定利回り</span><span>6.8% / 年</span></div>
+              <div class="app-stat-row"><span>次回分配日</span><span>2026.09.30</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="subsection-text">
+        <p class="subsection-label">01 — PLATFORM</p>
+        <h3>技術基盤の開発・提供</h3>
+        <p>信託受益権のトークン化、KYC・契約自動化を支えるマルチテナントSaaS基盤を自社開発。パートナー企業ごとのブランドに合わせたホワイトラベル提供が可能です。</p>
+        <a href="#" class="link">プラットフォームについて →</a>
+      </div>
     </div>
-    <div class="platform-content">
-      <h3>技術基盤の開発・提供</h3>
-      <p>信託受益権のトークン化、KYC・契約自動化を支えるマルチテナント SaaS基盤を自社開発。パートナー企業とのこのプラットフォームに合わせたホワイトラベル提供が可能です。</p>
-      <a href="#" class="link">プラットフォームについて →</a>
-    </div>
-  </section>
 
-  <!-- Structuring Section -->
-  <section class="section structuring">
-    <div class="section-header">
-      <h2>02 - STRUCTURING</h2>
+    <!-- Structuring Sub-section -->
+    <div class="subsection structuring-block">
+      <div class="subsection-text">
+        <p class="subsection-label">02 — STRUCTURING</p>
+        <h3>スキーム設計</h3>
+        <p>日本の金融商品取引法・信託法とクロスボーダー不動産法制に準拠したスキームを、各国の法律顧問と連携しながら構築します。</p>
+        <a href="#" class="link">スキームについて →</a>
+      </div>
+      <div class="mockup-card scheme-mockup">
+        <div class="mockup-header">スキームビルダー / UAE案件</div>
+        <div class="scheme-body">
+          <div class="scheme-flow">
+            <div class="flow-step">
+              <div class="flow-title">海外SPC(UAE)</div>
+              <div class="flow-sub">現地不動産の保有主体</div>
+            </div>
+            <div class="flow-arrow">↓</div>
+            <div class="flow-step">
+              <div class="flow-title">信託(受益権)</div>
+              <div class="flow-sub">信託法・金商法準拠</div>
+            </div>
+            <div class="flow-arrow">↓</div>
+            <div class="flow-step active">
+              <div class="flow-title">トークン発行</div>
+              <div class="flow-sub">受益権のデジタル化</div>
+            </div>
+          </div>
+          <div class="scheme-checklist">
+            <div class="checklist-title">適法性チェック</div>
+            <div class="check-item done">✓ 金融商品取引法</div>
+            <div class="check-item done">✓ 信託法</div>
+            <div class="check-item done">✓ UAE不動産法制</div>
+            <div class="check-item pending">○ 現地法律顧問レビュー中</div>
+            <button class="scheme-btn">ドラフト契約書を生成</button>
+          </div>
+        </div>
+        <div class="mockup-footer">最終更新: 2026.07.28 — 法律顧問3社と共有中</div>
+      </div>
     </div>
-    <div class="structuring-content">
-      <h3>スキーム設計</h3>
-      <p>日本の金融商品取引法「信託法とクロスボーダー不動産法制に準拠したスキーム設計、各国の法律顧問と連携しながら構築します。</p>
-      <a href="#" class="link">スキームについて →</a>
+
+    <!-- Ecosystem Sub-section -->
+    <div class="subsection ecosystem-block">
+      <div class="mockup-card partner-mockup">
+        <div class="mockup-header">パートナー管理</div>
+        <div class="partner-table">
+          <div class="partner-table-row head">
+            <span>パートナー</span><span>領域 / 地域</span><span>ステータス</span>
+          </div>
+          <div class="partner-table-row">
+            <span>Christie's International Real Estate</span><span>ソーシング / UAE</span><span class="status done">締結済</span>
+          </div>
+          <div class="partner-table-row">
+            <span>Sheng Tai International</span><span>ソーシング / マレーシア</span><span class="status done">締結済</span>
+          </div>
+          <div class="partner-table-row">
+            <span>UK信託</span><span>信託基盤 / 日本</span><span class="status done">締結済</span>
+          </div>
+          <div class="partner-table-row">
+            <span>Ripple</span><span>送金インフラ / グローバル</span><span class="status pending">協議中</span>
+          </div>
+        </div>
+        <div class="partner-stats">
+          <div class="partner-stat"><span class="label">パイプライン総額</span><span class="value">$900M+</span></div>
+          <div class="partner-stat"><span class="label">展開地域</span><span class="value">3カ国</span></div>
+        </div>
+      </div>
+      <div class="subsection-text">
+        <p class="subsection-label">03 — ECOSYSTEM</p>
+        <h3>パートナーシップの構築</h3>
+        <p>不動産事業者・金融事業者・信託会社との提携ネットワークを、国境を越えて展開しています。</p>
+        <a href="#" class="link">パートナーシップを見る →</a>
+      </div>
     </div>
   </section>
 
@@ -134,60 +230,22 @@
     <div class="section-header">
       <h2>PARTNERSHIP / 03</h2>
     </div>
-    <h3>各領域のリーダーとMOUを締結</h3>
-    <div class="partnership-grid">
-      <div class="partnership-card">
+    <div class="section-intro">
+      <h3>各領域のリーダーとMOUを締結</h3>
+      <p>ソーシングから技術基盤まで、国境を越えたパートナーシップを推進しています。<br><a href="#" class="link">パートナーシップ一覧へ →</a></p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-image">
+        <img src="images/christie-dubai.jpg" alt="Christie's Dubai" loading="lazy">
+      </div>
+      <div class="feature-info">
+        <p class="feature-tag">FEATURED — SOURCING / UAE</p>
         <h4>Christie's International Real Estate Dubai</h4>
-        <div class="featured">
-          <img src="images/christie-dubai.jpg" alt="Christie's Dubai" loading="lazy">
-          <div class="featured-info">
-            <p>Christie's International Real Estate Dubaiのグローバルネットワークを選び、UAEにおける不動産ソーシングひび口化日本展開における戦略的提携を締結。</p>
-            <div class="featured-stats">
-              <span>$400M</span>
-              <span>Dubai</span>
-            </div>
-          </div>
+        <p>Christie's International Real Estate Dubaiのグローバルネットワークを通じ、UAEにおける不動産ソーシング及び小口化日本展開における戦略的提携を締結。</p>
+        <div class="feature-stats">
+          <div class="feature-stat"><span class="value">$400M</span><span class="label">契約規模</span></div>
+          <div class="feature-stat"><span class="value">Dubai</span><span class="label">UAE拠点</span></div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Ecosystem Section -->
-  <section class="section ecosystem">
-    <div class="section-header">
-      <h2>05 - ECOSYSTEM</h2>
-    </div>
-    <h3>パートナーシップの構築</h3>
-    <div class="partners-table">
-      <div class="partner-row">
-        <span>Christie's International Real Estate</span>
-        <span>ソーシング / UAE</span>
-        <span class="status">提携済</span>
-      </div>
-      <div class="partner-row">
-        <span>Sheng Tai International</span>
-        <span>ソーシング / マレーシア</span>
-        <span class="status">提携済</span>
-      </div>
-      <div class="partner-row">
-        <span>UK信託</span>
-        <span>信託基盤 / 日本</span>
-        <span class="status">提携済</span>
-      </div>
-      <div class="partner-row">
-        <span>Ripple</span>
-        <span>決済インフラ / グローバル</span>
-        <span class="status">協議中</span>
-      </div>
-    </div>
-    <div class="ecosystem-stats">
-      <div class="stat">
-        <div class="stat-value">$900M+</div>
-        <div class="stat-label">パイプライン総額</div>
-      </div>
-      <div class="stat">
-        <div class="stat-value">3ヶ国</div>
-        <div class="stat-label">展開地域</div>
       </div>
     </div>
   </section>
@@ -195,13 +253,17 @@
   <!-- Recognition Section -->
   <section class="section recognition">
     <div class="section-header">
-      <h2>RECOGNITION / 04</h2>
+      <h2>— RECOGNITION / 04</h2>
+      <a href="#" class="section-link">実績一覧へ →</a>
     </div>
-    <h3>受賞・登壇実績</h3>
+    <div class="section-intro">
+      <p>国内外のプログラムでの採択、登壇、メディア掲載実績です。</p>
+    </div>
+    <h3 class="visually-hidden">受賞・登壇実績</h3>
     <div class="recognition-list">
       <article class="recognition-item">
         <span class="label">登壇</span>
-        <p>東京大学ブロックチェーンノベーション寄附講座にて講師として登壇</p>
+        <p>東京大学ブロックチェーンイノベーション寄附講座にて講師として登壇</p>
         <a href="#" class="link">詳細を見る →</a>
       </article>
       <article class="recognition-item">
@@ -211,12 +273,12 @@
       </article>
       <article class="recognition-item">
         <span class="label">登壇</span>
-        <p>「XRP Tokyo 2026」(TEAMZ SUMMIT)にてRippleとのセッションに登壇</p>
+        <p>「XRP Tokyo 2026」(TEAMZ SUMMIT)にてRippleとのセッションで登壇</p>
         <a href="#" class="link">詳細を見る →</a>
       </article>
       <article class="recognition-item">
         <span class="label">受賞</span>
-        <p>「日本金融インノベーションプログラム(JFIP)」で最優秀賞を受賞</p>
+        <p>「日本金融インフライノベーションプログラム(JFIIP)」で最優秀賞を受賞</p>
         <a href="#" class="link">詳細を見る →</a>
       </article>
       <article class="recognition-item">
@@ -230,23 +292,21 @@
   <!-- CEO Message Section -->
   <section id="ceo" class="section message">
     <div class="section-header">
-      <h2>MESSAGE / 05</h2>
+      <h2>— MESSAGE / 05</h2>
     </div>
-    <div class="message-content">
-      <h3>代表挨拶</h3>
-      <div class="ceo-profile">
-        <img src="images/ceo-profile.jpg" alt="CEO - 廣田裕介" loading="lazy">
-        <div class="ceo-info">
-          <p>世界中のどんな資産にも、誰もが手を伸ばせる時代へ。</p>
-          <p>このたびは、Laplaceのウェブサイトをご覧いただき、誠にありがとうございます。</p>
-          <p>代表取締役の廣田裕介です。資産のトークン化市場は、いま世界的に急拡大しています。</p>
-          <p>日本には個人の資産・消費だけで1,100兆円という世界でも見ない規模の資産が眠る一方、海外資産へのアクセスは一部の富裕層や機関投資家にしか開かれていませんでした。</p>
-          <p>Laplaceは、この非対称性を解消し、世界中のあらゆる資産に誰もが100ドルからワンクリックでアクセスできるマーケットプレイスを目指しています。</p>
-          <a href="#" class="link">代表挨拶全文を読む →</a>
-          <div class="ceo-signature">
-            <p><strong>代表取締役CEO</strong> 廣田裕介</p>
-            <p>Founder & CEO, Laplace Inc.</p>
-          </div>
+    <h3 class="message-title">代表挨拶</h3>
+    <div class="ceo-profile">
+      <img src="images/ceo-profile.jpg" alt="CEO - 廣田裕介" loading="lazy">
+      <div class="ceo-info">
+        <h4>世界中のどんな資産にも、<br>誰もが手を伸ばせる時代へ。</h4>
+        <p>このたびは、Laplaceのウェブサイトをご覧いただき、誠にありがとうございます。</p>
+        <p>代表取締役の廣田裕介です。資産のトークン化市場は、いま世界的に急拡大しています。</p>
+        <p>日本には個人の現金・預金だけで1,100兆円という世界でも類を見ない規模の資産が眠る一方、海外資産へのアクセスは一部の富裕層や機関投資家にしか開かれていませんでした。</p>
+        <p>Laplaceは、この非対称性を解消し、世界中のあらゆる資産に誰もが100ドルからワンクリックでアクセスできるマーケットプレイスを目指しています。</p>
+        <a href="#" class="link">代表挨拶全文を読む →</a>
+        <div class="ceo-signature">
+          <p><strong>代表取締役CEO</strong>&nbsp;&nbsp;廣田裕介</p>
+          <p>Founder &amp; CEO, Laplace Inc.</p>
         </div>
       </div>
     </div>
@@ -255,8 +315,9 @@
   <!-- Company Section -->
   <section id="company" class="section company">
     <div class="section-header">
-      <h2>COMPANY / 06</h2>
+      <h2>— COMPANY / 06</h2>
     </div>
+    <h3 class="message-title">会社概要</h3>
     <div class="company-info">
       <div class="info-row">
         <span class="label">会社名</span>
@@ -276,7 +337,7 @@
       </div>
       <div class="info-row">
         <span class="label">事業内容</span>
-        <span class="value">クロスボーダー不動産RWAの技術基盤開発・提供、信託受益権のトークン化に関するスキーム設計、ブロックチェーン</span>
+        <span class="value">クロスボーダー不動産RWAの技術基盤開発・提供、信託受益権のトークン化に関するスキーム設計、プラットフォーム運営</span>
       </div>
       <div class="info-row">
         <span class="label">主要パートナー</span>
@@ -291,18 +352,31 @@
 
   <!-- Contact Section -->
   <section id="contact" class="section contact">
+    <p class="contact-star">✦</p>
     <h2>不動産RWA事業における提携をご検討の方へ</h2>
-    <p>ソーシング、金融商品化、技術基盤の提供まで、貴社の強みを活かした提携について、ぜひお話しさせてください。</p>
+    <p>ソーシング、金融商品化、技術基盤の提供まで。貴社の強みを活かした提携について、ぜひお話しさせてください。</p>
     <form class="contact-form">
       <div class="form-group">
-        <input type="text" placeholder="お名前 *" required>
-        <input type="text" placeholder="会社名" required>
+        <div class="field">
+          <label>お名前 *</label>
+          <input type="text" placeholder="山田 太郎" required>
+        </div>
+        <div class="field">
+          <label>会社名</label>
+          <input type="text" placeholder="株式会社◯◯">
+        </div>
       </div>
       <div class="form-group">
-        <input type="email" placeholder="メールアドレス *" required>
+        <div class="field">
+          <label>メールアドレス *</label>
+          <input type="email" placeholder="you@example.com" required>
+        </div>
       </div>
       <div class="form-group">
-        <textarea placeholder="お問い合わせ内容 *" required></textarea>
+        <div class="field">
+          <label>お問い合わせ内容 *</label>
+          <textarea placeholder="ご提携内容やご相談事項をご記入ください" required></textarea>
+        </div>
       </div>
       <button type="submit" class="btn btn-primary">送信する</button>
     </form>
