@@ -1,14 +1,3 @@
-// Ensure hero video autoplays on mobile browsers that ignore the autoplay attribute
-const heroVideo = document.querySelector('.hero-video');
-if (heroVideo) {
-  const tryPlay = () => heroVideo.play().catch(() => {});
-  tryPlay();
-  document.addEventListener('visibilitychange', () => {
-    if (!document.hidden) tryPlay();
-  });
-  document.addEventListener('touchstart', tryPlay, { once: true, passive: true });
-}
-
 // Mobile nav toggle
 const navToggle = document.querySelector('.nav-toggle');
 const navMenu = document.querySelector('.nav-menu');

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Laplace | クロスボーダー不動産RWAインフラ</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="css/style.css?v=6">
 </head>
 <body>
@@ -27,9 +28,36 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <video autoplay muted loop playsinline webkit-playsinline="true" preload="auto" class="hero-video">
+    <video autoplay muted loop playsinline webkit-playsinline="true" disablepictureinpicture preload="auto" id="heroVideo" class="hero-video">
       <source src="videos/hero.mp4" type="video/mp4">
     </video>
+    <script>
+      (function () {
+        var v = document.getElementById('heroVideo');
+        if (!v) return;
+        v.muted = true;
+        v.controls = false;
+        var tryPlay = function () { v.play().catch(function () {}); };
+        tryPlay();
+        ['loadedmetadata', 'loadeddata', 'canplay', 'canplaythrough'].forEach(function (evt) {
+          v.addEventListener(evt, tryPlay);
+        });
+        var unlock = function () {
+          tryPlay();
+          if (!v.paused) {
+            ['touchstart', 'touchend', 'click', 'scroll'].forEach(function (evt) {
+              document.removeEventListener(evt, unlock);
+            });
+          }
+        };
+        ['touchstart', 'touchend', 'click', 'scroll'].forEach(function (evt) {
+          document.addEventListener(evt, unlock, { passive: true });
+        });
+        document.addEventListener('visibilitychange', function () {
+          if (!document.hidden) tryPlay();
+        });
+      })();
+    </script>
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <p class="hero-subtitle">— CROSS-BORDER REAL ESTATE RWA</p>
@@ -376,6 +404,6 @@
     <p>&copy; 2026 Laplace Inc. All rights reserved.</p>
   </footer>
 
-  <script src="js/main.js?v=6"></script>
+  <script src="js/main.js?v=7"></script>
 </body>
 </html>
