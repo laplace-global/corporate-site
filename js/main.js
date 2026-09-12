@@ -1,3 +1,30 @@
+// Language toggle (JA / EN)
+(function () {
+  function currentLang() {
+    return document.documentElement.getAttribute('data-lang') || 'ja';
+  }
+  function applyLang(lang) {
+    document.documentElement.setAttribute('data-lang', lang);
+    document.documentElement.lang = lang;
+    document.querySelectorAll('.lang-option').forEach(function (btn) {
+      btn.classList.toggle('active', btn.getAttribute('data-set-lang') === lang);
+    });
+    document.querySelectorAll('[data-ph-ja]').forEach(function (el) {
+      var ph = lang === 'en' ? el.getAttribute('data-ph-en') : el.getAttribute('data-ph-ja');
+      if (ph) el.setAttribute('placeholder', ph);
+    });
+  }
+  applyLang(currentLang());
+  document.querySelectorAll('.lang-option').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var lang = btn.getAttribute('data-set-lang');
+      if (lang === currentLang()) return;
+      applyLang(lang);
+      try { localStorage.setItem('lang', lang); } catch (e) {}
+    });
+  });
+})();
+
 // Mobile nav toggle
 const navToggle = document.querySelector('.nav-toggle');
 const navMenu = document.querySelector('.nav-menu');
@@ -56,7 +83,10 @@ if (contactForm) {
   contactForm.addEventListener('submit', function (e) {
     e.preventDefault();
     // Here you would typically send the form data to a server
-    alert('お問い合わせありがとうございます。後ほどご連絡させていただきます。');
+    const isEn = document.documentElement.getAttribute('data-lang') === 'en';
+    alert(isEn
+      ? 'Thank you for reaching out. We will get back to you shortly.'
+      : 'お問い合わせありがとうございます。後ほどご連絡させていただきます。');
     this.reset();
   });
 }

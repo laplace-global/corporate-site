@@ -4,6 +4,48 @@
   box-sizing: border-box;
 }
 
+/* Language toggle: hide whichever language doesn't match <html data-lang> */
+html[data-lang="ja"] [data-lang-en] { display: none !important; }
+html[data-lang="en"] [data-lang-ja] { display: none !important; }
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  padding: 2px;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.lang-option {
+  background: none;
+  border: none;
+  color: var(--text-dark);
+  font-size: 0.78rem;
+  font-family: var(--sans-font);
+  letter-spacing: 0.03em;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.lang-option.active {
+  background: var(--accent-color);
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+.lang-option:not(.active):hover {
+  color: var(--text-light);
+}
+
+.section#company .lang-switch,
+.section.message .lang-switch {
+  border-color: #ddd;
+}
+
 :root {
   --primary-dark: #0d0d0d;
   --secondary-dark: #1a1a1a;
@@ -1296,6 +1338,11 @@ body {
 
   .nav-menu li {
     border-top: 1px solid var(--border-color);
+  }
+
+  .nav-menu .lang-switch {
+    margin: 1rem 1.5rem;
+    justify-content: center;
   }
 
   .nav-menu a,

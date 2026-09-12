@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" data-lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>お知らせ一覧 | Laplace</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="css/style.css?v=6">
+  <link rel="stylesheet" href="css/style.css?v=7">
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('lang') === 'en') {
+          document.documentElement.setAttribute('data-lang', 'en');
+          document.documentElement.lang = 'en';
+        }
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
   <!-- Header -->
@@ -16,113 +26,218 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-menu">
-        <li><a href="index.html#news">お知らせ</a></li>
-        <li><a href="index.html#business">事業内容</a></li>
-        <li><a href="index.html#partnership">パートナーシップ</a></li>
-        <li><a href="index.html#ceo">代表挨拶</a></li>
-        <li><a href="index.html#company">会社概要</a></li>
-        <li><a href="index.html#contact" class="btn-contact">お問い合わせ</a></li>
+        <li><a href="index.html#news"><span data-lang-ja>お知らせ</span><span data-lang-en>News</span></a></li>
+        <li><a href="index.html#business"><span data-lang-ja>事業内容</span><span data-lang-en>Business</span></a></li>
+        <li><a href="index.html#partnership"><span data-lang-ja>パートナーシップ</span><span data-lang-en>Partnerships</span></a></li>
+        <li><a href="index.html#ceo"><span data-lang-ja>代表挨拶</span><span data-lang-en>Message</span></a></li>
+        <li><a href="index.html#company"><span data-lang-ja>会社概要</span><span data-lang-en>Company</span></a></li>
+        <li>
+          <div class="lang-switch" role="group" aria-label="Language">
+            <button type="button" class="lang-option" data-set-lang="ja">JA</button>
+            <button type="button" class="lang-option" data-set-lang="en">EN</button>
+          </div>
+        </li>
+        <li><a href="index.html#contact" class="btn-contact"><span data-lang-ja>お問い合わせ</span><span data-lang-en>Contact</span></a></li>
       </ul>
     </nav>
   </header>
 
   <div class="page-header">
-    <a href="index.html" class="back-link">← トップに戻る</a>
-    <h1>お知らせ一覧</h1>
+    <a href="index.html" class="back-link"><span data-lang-ja>← トップに戻る</span><span data-lang-en>← Back to Home</span></a>
+    <h1><span data-lang-ja>お知らせ一覧</span><span data-lang-en>News</span></h1>
   </div>
 
   <div class="article-list">
     <article class="article-full" id="article-12">
       <div class="news-date">2026.07.15</div>
-      <div class="news-tag">登壇</div>
-      <h2>東京大学ブロックチェーンイノベーション寄附講座にて講師として登壇</h2>
+      <div class="news-tag"><span data-lang-ja>登壇</span><span data-lang-en>Speaking</span></div>
+      <h2>
+        <span data-lang-ja>東京大学ブロックチェーンイノベーション寄附講座にて講師として登壇</span>
+        <span data-lang-en>Speaks at the University of Tokyo's Blockchain Innovation Endowed Course</span>
+      </h2>
       <img src="images/news/article-12-todai.jpg" alt="東京大学ブロックチェーンイノベーション寄附講座での登壇の様子" class="article-image" loading="lazy">
-      <p>Laplace代表・廣田裕介が、東京大学のブロックチェーンイノベーション寄附講座にて、スタートアップ論および不動産RWAのユースケースをテーマに講師として登壇しました。実務家の視点から、日本におけるRWA分野の可能性と課題について講義を行いました。</p>
-      <p class="article-source"><a href="https://blockchain.t.u-tokyo.ac.jp" target="_blank" rel="noopener">東京大学ブロックチェーンイノベーション寄附講座公式</a></p>
+      <p>
+        <span data-lang-ja>Laplace代表・廣田裕介が、東京大学のブロックチェーンイノベーション寄附講座にて、スタートアップ論および不動産RWAのユースケースをテーマに講師として登壇しました。実務家の視点から、日本におけるRWA分野の可能性と課題について講義を行いました。</span>
+        <span data-lang-en>Laplace founder Yusuke Hirota lectured at the University of Tokyo's Blockchain Innovation Endowed Course, speaking on startup theory and real estate RWA use cases. Drawing on his practitioner's perspective, he discussed the opportunities and challenges facing Japan's RWA sector.</span>
+      </p>
+      <p class="article-source">
+        <span data-lang-ja><a href="https://blockchain.t.u-tokyo.ac.jp" target="_blank" rel="noopener">東京大学ブロックチェーンイノベーション寄附講座公式</a></span>
+        <span data-lang-en><a href="https://blockchain.t.u-tokyo.ac.jp" target="_blank" rel="noopener">University of Tokyo Blockchain Innovation Endowed Course (official)</a></span>
+      </p>
     </article>
 
     <article class="article-full" id="article-10">
       <div class="news-date">2026.05.27</div>
-      <div class="news-tag">受賞</div>
-      <h2>Superteam Japan「Frontier Hackathon Side Track」にて2位を受賞、賞金2,500 USDGを獲得</h2>
+      <div class="news-tag"><span data-lang-ja>受賞</span><span data-lang-en>Award</span></div>
+      <h2>
+        <span data-lang-ja>Superteam Japan「Frontier Hackathon Side Track」にて2位を受賞、賞金2,500 USDGを獲得</span>
+        <span data-lang-en>Wins 2nd Place and $2,500 USDG at Superteam Japan's "Frontier Hackathon Side Track"</span>
+      </h2>
       <img src="images/news/article-10-solana.jpg" alt="Superteam Japan Frontier Hackathon Side Trackでの登壇の様子" class="article-image" loading="lazy">
-      <p>Laplaceは、Superteam Japanが日本限定で開催した「Frontier Hackathon Side Track」(Solana Foundation・Colosseumが主催するグローバルハッカソン「Frontier」の日本向け特別トラック)において、全30件の応募の中から2位を受賞し、賞金2,500 USDGを獲得しました。</p>
-      <p class="article-source"><a href="https://superteam.fun/earn/listing/superteam-japan-frontier-hackathon-side-track" target="_blank" rel="noopener">Superteam Earn公式リスティング</a></p>
+      <p>
+        <span data-lang-ja>Laplaceは、Superteam Japanが日本限定で開催した「Frontier Hackathon Side Track」(Solana Foundation・Colosseumが主催するグローバルハッカソン「Frontier」の日本向け特別トラック)において、全30件の応募の中から2位を受賞し、賞金2,500 USDGを獲得しました。</span>
+        <span data-lang-en>Laplace placed 2nd out of 30 entries and won 2,500 USDG in prize money at "Frontier Hackathon Side Track," a Japan-only track of Solana Foundation and Colosseum's global "Frontier" hackathon, hosted by Superteam Japan.</span>
+      </p>
+      <p class="article-source">
+        <span data-lang-ja><a href="https://superteam.fun/earn/listing/superteam-japan-frontier-hackathon-side-track" target="_blank" rel="noopener">Superteam Earn公式リスティング</a></span>
+        <span data-lang-en><a href="https://superteam.fun/earn/listing/superteam-japan-frontier-hackathon-side-track" target="_blank" rel="noopener">Superteam Earn official listing</a></span>
+      </p>
     </article>
 
     <article class="article-full" id="article-9">
       <div class="news-date">2026.04.30</div>
-      <div class="news-tag">プレス</div>
-      <h2>Christie's International Real Estate Dubaiと$400M規模の戦略的パートナーシップを締結</h2>
-      <p>Laplaceは、Christie's International Real Estate Dubaiと、UAEにおける不動産トークン化プロジェクトに関する戦略的パートナーシップ(MOU)を締結しました。契約規模は$400M。ドバイの正規不動産ネットワークを通じたソーシング基盤の確立により、Laplaceのクロスボーダー不動産RWA事業における中核提携となります。</p>
-      <p class="article-source">本人開示情報に基づく(<a href="https://christiesrealestatedubai.com" target="_blank" rel="noopener">Christie's Dubai公式 christiesrealestatedubai.com</a>)</p>
+      <div class="news-tag"><span data-lang-ja>プレス</span><span data-lang-en>Press</span></div>
+      <h2>
+        <span data-lang-ja>Christie's International Real Estate Dubaiと$400M規模の戦略的パートナーシップを締結</span>
+        <span data-lang-en>Signs $400M Strategic Partnership with Christie's International Real Estate Dubai</span>
+      </h2>
+      <p>
+        <span data-lang-ja>Laplaceは、Christie's International Real Estate Dubaiと、UAEにおける不動産トークン化プロジェクトに関する戦略的パートナーシップ(MOU)を締結しました。契約規模は$400M。ドバイの正規不動産ネットワークを通じたソーシング基盤の確立により、Laplaceのクロスボーダー不動産RWA事業における中核提携となります。</span>
+        <span data-lang-en>Laplace signed a strategic partnership (MOU) with Christie's International Real Estate Dubai for real estate tokenization projects in the UAE, valued at $400M. The deal establishes a sourcing base through Dubai's established real estate network and stands as a core partnership for Laplace's cross-border real estate RWA business.</span>
+      </p>
+      <p class="article-source">
+        <span data-lang-ja>本人開示情報に基づく(<a href="https://christiesrealestatedubai.com" target="_blank" rel="noopener">Christie's Dubai公式 christiesrealestatedubai.com</a>)</span>
+        <span data-lang-en>Based on information disclosed by the company (<a href="https://christiesrealestatedubai.com" target="_blank" rel="noopener">Christie's Dubai official: christiesrealestatedubai.com</a>)</span>
+      </p>
     </article>
 
     <article class="article-full" id="article-8">
       <div class="news-date">2026.04.07</div>
-      <div class="news-tag">登壇</div>
-      <h2>「XRP Tokyo 2026」(TEAMZ SUMMIT)にRippleとのセッションで登壇</h2>
+      <div class="news-tag"><span data-lang-ja>登壇</span><span data-lang-en>Speaking</span></div>
+      <h2>
+        <span data-lang-ja>「XRP Tokyo 2026」(TEAMZ SUMMIT)にRippleとのセッションで登壇</span>
+        <span data-lang-en>Speaks Alongside Ripple at "XRP Tokyo 2026" (TEAMZ SUMMIT)</span>
+      </h2>
       <img src="images/news/article-8-xrp.jpg" alt="XRP Tokyo 2026パネルセッションの様子" class="article-image" loading="lazy">
-      <p>Laplace代表・廣田裕介が、TEAMZ SUMMIT 2026の特別プログラムとして八芳園にて開催された「XRP Tokyo 2026」にて、パネルセッション「Japan's XRPL Ecosystem: Local Innovation and Global Opportunities」に登壇しました。共演者はNexbridge共同創業者Jean Zhu氏、Digital Platformer代表松田一慶氏、SuzuPay創業者Ai Kosuke氏、Papi Code取締役Sojun Katsura氏、モデレーターはRippleのTatsuya Kohrogi氏。日本のXRPLエコシステムにおけるローカルイノベーションとグローバルな事業機会について議論しました。</p>
-      <p class="article-source"><a href="https://teamz.co.jp" target="_blank" rel="noopener">teamz.co.jp公式スピーカーページ</a>、<a href="https://teamz.co.jp/en/2026/xrp-tokyo-2026" target="_blank" rel="noopener">XRP Tokyo 2026アジェンダ</a></p>
+      <p>
+        <span data-lang-ja>Laplace代表・廣田裕介が、TEAMZ SUMMIT 2026の特別プログラムとして八芳園にて開催された「XRP Tokyo 2026」にて、パネルセッション「Japan's XRPL Ecosystem: Local Innovation and Global Opportunities」に登壇しました。共演者はNexbridge共同創業者Jean Zhu氏、Digital Platformer代表松田一慶氏、SuzuPay創業者Ai Kosuke氏、Papi Code取締役Sojun Katsura氏、モデレーターはRippleのTatsuya Kohrogi氏。日本のXRPLエコシステムにおけるローカルイノベーションとグローバルな事業機会について議論しました。</span>
+        <span data-lang-en>Laplace founder Yusuke Hirota spoke on the panel "Japan's XRPL Ecosystem: Local Innovation and Global Opportunities" at "XRP Tokyo 2026," held at Happo-en as a special program of TEAMZ SUMMIT 2026. Fellow panelists included Nexbridge co-founder Jean Zhu, Digital Platformer CEO Ikkei Matsuda, SuzuPay founder Ai Kosuke, and Papi Code director Sojun Katsura, moderated by Ripple's Tatsuya Kohrogi. The panel discussed local innovation and global business opportunities within Japan's XRPL ecosystem.</span>
+      </p>
+      <p class="article-source">
+        <span data-lang-ja><a href="https://teamz.co.jp" target="_blank" rel="noopener">teamz.co.jp公式スピーカーページ</a>、<a href="https://teamz.co.jp/en/2026/xrp-tokyo-2026" target="_blank" rel="noopener">XRP Tokyo 2026アジェンダ</a></span>
+        <span data-lang-en><a href="https://teamz.co.jp" target="_blank" rel="noopener">teamz.co.jp official speaker page</a>, <a href="https://teamz.co.jp/en/2026/xrp-tokyo-2026" target="_blank" rel="noopener">XRP Tokyo 2026 agenda</a></span>
+      </p>
     </article>
 
     <article class="article-full" id="article-7">
       <div class="news-date">2026.03.31</div>
-      <div class="news-tag">受賞</div>
-      <h2>「日本金融インフライノベーションプログラム(JFIIP)」で最優秀賞(Grand Prize)を受賞、賞金1万米ドルを獲得</h2>
-      <p>Laplaceは、JETROとRipple Labsが主催する「日本金融インフライノベーションプログラム(JFIIP)」において、最優秀賞(Grand Prize)を受賞し、賞金総額3万米ドルのうち1万米ドル(当時レートで約155万円)を獲得しました。本プログラムは、XRP Ledger等のブロックチェーン上でエンタープライズグレードの規制準拠型デジタル金融ソリューションを開発するスタートアップを支援する、ベンチャースタジオ主導の国家規模アクセラレーションイニシアチブです。デモデイはJapan Fintech Week 2026期間中の2026年2月24日にジェトロ東京で開催され、政策立案者・金融機関・投資家が参集しました。</p>
-      <p class="article-source"><a href="https://web3salon.or.jp/program/japan-financial-infrastructure-innovation-program" target="_blank" rel="noopener">Web3 Salon JETRO公式</a></p>
+      <div class="news-tag"><span data-lang-ja>受賞</span><span data-lang-en>Award</span></div>
+      <h2>
+        <span data-lang-ja>「日本金融インフライノベーションプログラム(JFIIP)」で最優秀賞(Grand Prize)を受賞、賞金1万米ドルを獲得</span>
+        <span data-lang-en>Wins Grand Prize and $10,000 at the "Japan Financial Infrastructure Innovation Program (JFIIP)"</span>
+      </h2>
+      <p>
+        <span data-lang-ja>Laplaceは、JETROとRipple Labsが主催する「日本金融インフライノベーションプログラム(JFIIP)」において、最優秀賞(Grand Prize)を受賞し、賞金総額3万米ドルのうち1万米ドル(当時レートで約155万円)を獲得しました。本プログラムは、XRP Ledger等のブロックチェーン上でエンタープライズグレードの規制準拠型デジタル金融ソリューションを開発するスタートアップを支援する、ベンチャースタジオ主導の国家規模アクセラレーションイニシアチブです。デモデイはJapan Fintech Week 2026期間中の2026年2月24日にジェトロ東京で開催され、政策立案者・金融機関・投資家が参集しました。</span>
+        <span data-lang-en>Laplace won the Grand Prize at the "Japan Financial Infrastructure Innovation Program (JFIIP)," hosted by JETRO and Ripple Labs, taking home $10,000 (roughly ¥1.55M at the time) of the $30,000 total prize pool. The program is a venture-studio-led national accelerator initiative supporting startups building enterprise-grade, regulation-compliant digital financial solutions on blockchains such as the XRP Ledger. Demo Day was held on February 24, 2026 at JETRO Tokyo during Japan Fintech Week 2026, drawing policymakers, financial institutions, and investors.</span>
+      </p>
+      <p class="article-source">
+        <span data-lang-ja><a href="https://web3salon.or.jp/program/japan-financial-infrastructure-innovation-program" target="_blank" rel="noopener">Web3 Salon JETRO公式</a></span>
+        <span data-lang-en><a href="https://web3salon.or.jp/program/japan-financial-infrastructure-innovation-program" target="_blank" rel="noopener">Web3 Salon JETRO official</a></span>
+      </p>
     </article>
 
     <article class="article-full" id="article-6">
       <div class="news-date">2025.10.15</div>
-      <div class="news-tag">受賞</div>
-      <h2>「GITEX Global Supernova Challenge」でTOP10ファイナリストに選出</h2>
+      <div class="news-tag"><span data-lang-ja>受賞</span><span data-lang-en>Award</span></div>
+      <h2>
+        <span data-lang-ja>「GITEX Global Supernova Challenge」でTOP10ファイナリストに選出</span>
+        <span data-lang-en>Selected as a Top 10 Finalist at the "GITEX Global Supernova Challenge"</span>
+      </h2>
       <img src="images/news/article-6-gitex.jpg" alt="GITEX Global Supernova Challengeでの登壇の様子" class="article-image" loading="lazy">
-      <p>Laplaceは、ドバイで開催された「GITEX Global」のスタートアップピッチコンテスト「Supernova Challenge」において、1,000社以上の応募の中からTOP10ファイナリストに選出されました。この経験を通じ、代表・廣田裕介はChristie's International Real EstateやSheng Tai Internationalとの提携につながる、UAE・東南アジア市場における事業拡大の足がかりを得ました。世界水準の審査員・パートナー企業とのネットワーキングの場となったExpand North Starは、その後もLaplaceの主要な事業拡大チャネルとなっています。</p>
-      <p class="article-source"><a href="https://expandnorthstar.com/laplace" target="_blank" rel="noopener">Expand North Star公式サクセスストーリー</a></p>
+      <p>
+        <span data-lang-ja>Laplaceは、ドバイで開催された「GITEX Global」のスタートアップピッチコンテスト「Supernova Challenge」において、1,000社以上の応募の中からTOP10ファイナリストに選出されました。この経験を通じ、代表・廣田裕介はChristie's International Real EstateやSheng Tai Internationalとの提携につながる、UAE・東南アジア市場における事業拡大の足がかりを得ました。世界水準の審査員・パートナー企業とのネットワーキングの場となったExpand North Starは、その後もLaplaceの主要な事業拡大チャネルとなっています。</span>
+        <span data-lang-en>Laplace was selected as a Top 10 finalist out of more than 1,000 applicants at "Supernova Challenge," the startup pitch competition of GITEX Global in Dubai. Through this experience, founder Yusuke Hirota gained a foothold for expansion in the UAE and Southeast Asian markets that led to partnerships with Christie's International Real Estate and Sheng Tai International. Expand North Star, which provided networking with world-class judges and partner companies, has remained one of Laplace's primary channels for business expansion ever since.</span>
+      </p>
+      <p class="article-source">
+        <span data-lang-ja><a href="https://expandnorthstar.com/laplace" target="_blank" rel="noopener">Expand North Star公式サクセスストーリー</a></span>
+        <span data-lang-en><a href="https://expandnorthstar.com/laplace" target="_blank" rel="noopener">Expand North Star official success story</a></span>
+      </p>
     </article>
 
     <article class="article-full" id="article-5">
       <div class="news-date">2025.10.15</div>
-      <div class="news-tag">採択</div>
-      <h2>Hub71(Elixir Capital)のWeb3スタートアッププログラムに国内7社として選出</h2>
-      <p>Laplaceは、JETROおよびElixir Capitalが主催する「J-StarX」の一環として、アブダビの政府系イノベーション拠点Hub71が実施するWeb3スタートアップ向けイマージョンプログラムの第3フェーズに、選出された国内7社の1社として参加しました。参加企業はLaplaceのほか、Curvegrid、Kyuzan、Creatant、MIKI、XENEA、Aniarkの計7社。東京での事前プログラムを経て、Hub71のアブダビ本拠地とGITEX Expand North Starでの2週間の現地プログラムに参加し、現地投資家との接点構築、パイロット機会の探索、GITEXジャパンパビリオンでの技術展示を行いました。Hub71のStartup Journey Lead、Divya Nair氏は、日本の起業家がアブダビの開かれたビジネス環境を体験することの意義を強調しています。</p>
-      <p class="article-source"><a href="https://arabnews.jp/en/business/article_157073" target="_blank" rel="noopener">Arab News Japan</a>、<a href="https://hub71.com" target="_blank" rel="noopener">Hub71公式プレスリリース</a></p>
+      <div class="news-tag"><span data-lang-ja>採択</span><span data-lang-en>Selected</span></div>
+      <h2>
+        <span data-lang-ja>Hub71(Elixir Capital)のWeb3スタートアッププログラムに国内7社として選出</span>
+        <span data-lang-en>Selected as One of 7 Japanese Startups for Hub71's (Elixir Capital) Web3 Program</span>
+      </h2>
+      <p>
+        <span data-lang-ja>Laplaceは、JETROおよびElixir Capitalが主催する「J-StarX」の一環として、アブダビの政府系イノベーション拠点Hub71が実施するWeb3スタートアップ向けイマージョンプログラムの第3フェーズに、選出された国内7社の1社として参加しました。参加企業はLaplaceのほか、Curvegrid、Kyuzan、Creatant、MIKI、XENEA、Aniarkの計7社。東京での事前プログラムを経て、Hub71のアブダビ本拠地とGITEX Expand North Starでの2週間の現地プログラムに参加し、現地投資家との接点構築、パイロット機会の探索、GITEXジャパンパビリオンでの技術展示を行いました。Hub71のStartup Journey Lead、Divya Nair氏は、日本の起業家がアブダビの開かれたビジネス環境を体験することの意義を強調しています。</span>
+        <span data-lang-en>As part of "J-StarX," hosted by JETRO and Elixir Capital, Laplace joined the third phase of a Web3 startup immersion program run by Hub71, Abu Dhabi's government-backed innovation hub, as one of seven selected Japanese companies. The cohort included Laplace alongside Curvegrid, Kyuzan, Creatant, MIKI, XENEA, and Aniark. After a preparatory program in Tokyo, participants joined a two-week on-the-ground program at Hub71's Abu Dhabi base and GITEX Expand North Star, building connections with local investors, exploring pilot opportunities, and exhibiting technology at the GITEX Japan Pavilion. Hub71's Startup Journey Lead, Divya Nair, emphasized the value of Japanese entrepreneurs experiencing Abu Dhabi's open business environment.</span>
+      </p>
+      <p class="article-source">
+        <span data-lang-ja><a href="https://arabnews.jp/en/business/article_157073" target="_blank" rel="noopener">Arab News Japan</a>、<a href="https://hub71.com" target="_blank" rel="noopener">Hub71公式プレスリリース</a></span>
+        <span data-lang-en><a href="https://arabnews.jp/en/business/article_157073" target="_blank" rel="noopener">Arab News Japan</a>, <a href="https://hub71.com" target="_blank" rel="noopener">Hub71 official press release</a></span>
+      </p>
     </article>
 
     <article class="article-full" id="article-4">
       <div class="news-date">2025.10.12</div>
-      <div class="news-tag">プレス</div>
-      <h2>Sheng Tai International(マレーシア)と$500M規模のMOUを締結</h2>
-      <p>Laplaceは、マレーシアの不動産事業者Sheng Tai Internationalと、同国における不動産トークン化プロジェクトに関する戦略的パートナーシップ(MOU)を締結しました。契約規模は$500M。東南アジア展開における最初の大型提携です。</p>
-      <p class="article-source">本人開示情報に基づく</p>
+      <div class="news-tag"><span data-lang-ja>プレス</span><span data-lang-en>Press</span></div>
+      <h2>
+        <span data-lang-ja>Sheng Tai International(マレーシア)と$500M規模のMOUを締結</span>
+        <span data-lang-en>Signs $500M MOU with Sheng Tai International (Malaysia)</span>
+      </h2>
+      <p>
+        <span data-lang-ja>Laplaceは、マレーシアの不動産事業者Sheng Tai Internationalと、同国における不動産トークン化プロジェクトに関する戦略的パートナーシップ(MOU)を締結しました。契約規模は$500M。東南アジア展開における最初の大型提携です。</span>
+        <span data-lang-en>Laplace signed a strategic partnership (MOU) with Malaysian real estate operator Sheng Tai International for real estate tokenization projects in the country, valued at $500M. This marks Laplace's first major partnership in its Southeast Asia expansion.</span>
+      </p>
+      <p class="article-source">
+        <span data-lang-ja>本人開示情報に基づく</span>
+        <span data-lang-en>Based on information disclosed by the company</span>
+      </p>
     </article>
 
     <article class="article-full" id="article-3">
       <div class="news-date">2025.06.15</div>
-      <div class="news-tag">メディア</div>
-      <h2>デライト・ベンチャーズ「DelightX」1期生に選出、NHKが取材</h2>
+      <div class="news-tag"><span data-lang-ja>メディア</span><span data-lang-en>Media</span></div>
+      <h2>
+        <span data-lang-ja>デライト・ベンチャーズ「DelightX」1期生に選出、NHKが取材</span>
+        <span data-lang-en>Selected for Delight Ventures' "DelightX" Inaugural Cohort, Featured by NHK</span>
+      </h2>
       <img src="images/news/article-3-delight.jpg" alt="NHK「おはBiz」での取材の様子" class="article-image article-image--contain" loading="lazy">
-      <p>Laplace代表・廣田裕介が、DeNA系列のベンチャーキャピタル、デライト・ベンチャーズが運営するAI特化の海外起業家育成プログラム「DelightX」の1期生に選出されました。米国サンフランシスコ・ベイエリアに滞在し、現地の起業家・投資家陣から直接メンタリングを受けるプログラムで、参加者には最大6万米ドルの支援も提供されます。この挑戦の様子はNHKにも取材されました。</p>
-      <p class="article-source"><a href="https://delight-ventures.com/insights/delightx-info" target="_blank" rel="noopener">デライト・ベンチャーズ公式</a>、X投稿(DeNA PR)</p>
+      <p>
+        <span data-lang-ja>Laplace代表・廣田裕介が、DeNA系列のベンチャーキャピタル、デライト・ベンチャーズが運営するAI特化の海外起業家育成プログラム「DelightX」の1期生に選出されました。米国サンフランシスコ・ベイエリアに滞在し、現地の起業家・投資家陣から直接メンタリングを受けるプログラムで、参加者には最大6万米ドルの支援も提供されます。この挑戦の様子はNHKにも取材されました。</span>
+        <span data-lang-en>Laplace founder Yusuke Hirota was selected for the inaugural cohort of "DelightX," an AI-focused founder development program for entrepreneurs going global, run by Delight Ventures, a venture capital firm affiliated with DeNA. The program involves a stay in the San Francisco Bay Area with direct mentorship from local entrepreneurs and investors, with participants eligible for up to $60,000 in support. NHK covered his journey through the program.</span>
+      </p>
+      <p class="article-source">
+        <span data-lang-ja><a href="https://delight-ventures.com/insights/delightx-info" target="_blank" rel="noopener">デライト・ベンチャーズ公式</a>、X投稿(DeNA PR)</span>
+        <span data-lang-en><a href="https://delight-ventures.com/insights/delightx-info" target="_blank" rel="noopener">Delight Ventures official</a>, X post (DeNA PR)</span>
+      </p>
     </article>
 
     <article class="article-full" id="article-2">
       <div class="news-date">2024.09.18</div>
-      <div class="news-tag">採択</div>
-      <h2>ジェトロ×500 Global「J-StarX Silicon Valley Extended Program」に採択</h2>
-      <p>Laplace(創業当時の社名:株式会社Neuron X)は、日本貿易振興機構(JETRO)と500 Globalが共同運営するグローバル展開支援プログラム「J-StarX Silicon Valley Extended Program」に採択されました。東京での集中プログラムとシリコンバレーでの現地プログラムの2フェーズ構成で、グローバルVCへのピッチ力とGo-to-Market戦略を学ぶ機会となりました。</p>
-      <p class="article-source"><a href="https://neuron-x.co.jp" target="_blank" rel="noopener">neuron-x.co.jp</a>、<a href="https://jetro.go.jp/services/j-starx/B214.html" target="_blank" rel="noopener">JETRO公式</a></p>
+      <div class="news-tag"><span data-lang-ja>採択</span><span data-lang-en>Selected</span></div>
+      <h2>
+        <span data-lang-ja>ジェトロ×500 Global「J-StarX Silicon Valley Extended Program」に採択</span>
+        <span data-lang-en>Selected for JETRO × 500 Global's "J-StarX Silicon Valley Extended Program"</span>
+      </h2>
+      <p>
+        <span data-lang-ja>Laplace(創業当時の社名:株式会社Neuron X)は、日本貿易振興機構(JETRO)と500 Globalが共同運営するグローバル展開支援プログラム「J-StarX Silicon Valley Extended Program」に採択されました。東京での集中プログラムとシリコンバレーでの現地プログラムの2フェーズ構成で、グローバルVCへのピッチ力とGo-to-Market戦略を学ぶ機会となりました。</span>
+        <span data-lang-en>Laplace (then operating as Neuron X, Inc.) was selected for "J-StarX Silicon Valley Extended Program," a global expansion support program jointly run by the Japan External Trade Organization (JETRO) and 500 Global. The two-phase program — an intensive session in Tokyo followed by an on-the-ground program in Silicon Valley — offered the opportunity to hone pitching skills for global VCs and learn go-to-market strategy.</span>
+      </p>
+      <p class="article-source">
+        <span data-lang-ja><a href="https://neuron-x.co.jp" target="_blank" rel="noopener">neuron-x.co.jp</a>、<a href="https://jetro.go.jp/services/j-starx/B214.html" target="_blank" rel="noopener">JETRO公式</a></span>
+        <span data-lang-en><a href="https://neuron-x.co.jp" target="_blank" rel="noopener">neuron-x.co.jp</a>, <a href="https://jetro.go.jp/services/j-starx/B214.html" target="_blank" rel="noopener">JETRO official</a></span>
+      </p>
     </article>
 
     <article class="article-full" id="article-1">
       <div class="news-date">2024.07.01</div>
-      <div class="news-tag">採択</div>
-      <h2>中小企業庁「ものづくり補助金」に採択</h2>
-      <p>Laplace(創業当時の社名:株式会社Neuron X)は、中小企業庁が実施する「ものづくり・商業・サービス生産性向上促進補助金(第18次公募)」に採択されたことをお知らせいたします。本補助金は、国内中小企業・スタートアップの技術開発および生産性向上を支援する国の主要な制度であり、創業初期の技術基盤構築を後押ししました。</p>
-      <p class="article-source"><a href="https://neuron-x.co.jp" target="_blank" rel="noopener">neuron-x.co.jp</a>(2024-07-01投稿、2024-09-18最終更新)</p>
+      <div class="news-tag"><span data-lang-ja>採択</span><span data-lang-en>Selected</span></div>
+      <h2>
+        <span data-lang-ja>中小企業庁「ものづくり補助金」に採択</span>
+        <span data-lang-en>Selected for the SME Agency's "Monozukuri Subsidy"</span>
+      </h2>
+      <p>
+        <span data-lang-ja>Laplace(創業当時の社名:株式会社Neuron X)は、中小企業庁が実施する「ものづくり・商業・サービス生産性向上促進補助金(第18次公募)」に採択されたことをお知らせいたします。本補助金は、国内中小企業・スタートアップの技術開発および生産性向上を支援する国の主要な制度であり、創業初期の技術基盤構築を後押ししました。</span>
+        <span data-lang-en>Laplace (then operating as Neuron X, Inc.) was selected for the "Subsidy for Business Productivity Improvement through Manufacturing, Commerce, and Service Innovation" (18th round), administered by Japan's Small and Medium Enterprise Agency. This major national subsidy program supports technology development and productivity gains at domestic SMEs and startups, and helped fund Laplace's early technical foundation.</span>
+      </p>
+      <p class="article-source">
+        <span data-lang-ja><a href="https://neuron-x.co.jp" target="_blank" rel="noopener">neuron-x.co.jp</a>(2024-07-01投稿、2024-09-18最終更新)</span>
+        <span data-lang-en><a href="https://neuron-x.co.jp" target="_blank" rel="noopener">neuron-x.co.jp</a> (posted 2024-07-01, last updated 2024-09-18)</span>
+      </p>
     </article>
   </div>
 
@@ -131,6 +246,6 @@
     <p>&copy; 2026 Laplace Inc. All rights reserved.</p>
   </footer>
 
-  <script src="js/main.js?v=7"></script>
+  <script src="js/main.js?v=8"></script>
 </body>
 </html>

@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" data-lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Laplace | クロスボーダー不動産RWAインフラ</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="css/style.css?v=6">
+  <link rel="stylesheet" href="css/style.css?v=7">
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('lang') === 'en') {
+          document.documentElement.setAttribute('data-lang', 'en');
+          document.documentElement.lang = 'en';
+        }
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
   <!-- Header -->
@@ -16,12 +26,18 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-menu">
-        <li><a href="index.html#news">お知らせ</a></li>
-        <li><a href="index.html#business">事業内容</a></li>
-        <li><a href="index.html#partnership">パートナーシップ</a></li>
-        <li><a href="index.html#ceo">代表挨拶</a></li>
-        <li><a href="index.html#company">会社概要</a></li>
-        <li><a href="index.html#contact" class="btn-contact">お問い合わせ</a></li>
+        <li><a href="index.html#news"><span data-lang-ja>お知らせ</span><span data-lang-en>News</span></a></li>
+        <li><a href="index.html#business"><span data-lang-ja>事業内容</span><span data-lang-en>Business</span></a></li>
+        <li><a href="index.html#partnership"><span data-lang-ja>パートナーシップ</span><span data-lang-en>Partnerships</span></a></li>
+        <li><a href="index.html#ceo"><span data-lang-ja>代表挨拶</span><span data-lang-en>Message</span></a></li>
+        <li><a href="index.html#company"><span data-lang-ja>会社概要</span><span data-lang-en>Company</span></a></li>
+        <li>
+          <div class="lang-switch" role="group" aria-label="Language">
+            <button type="button" class="lang-option" data-set-lang="ja">JA</button>
+            <button type="button" class="lang-option" data-set-lang="en">EN</button>
+          </div>
+        </li>
+        <li><a href="index.html#contact" class="btn-contact"><span data-lang-ja>お問い合わせ</span><span data-lang-en>Contact</span></a></li>
       </ul>
     </nav>
   </header>
@@ -61,28 +77,32 @@
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <p class="hero-subtitle">— CROSS-BORDER REAL ESTATE RWA</p>
-      <h1 class="hero-title">海外不動産を<br><span class="hero-title-line2">誰もが所有できる資産に。</span></h1>
+      <h1 class="hero-title">
+        <span data-lang-ja>海外不動産を<br><span class="hero-title-line2">誰もが所有できる資産に。</span></span>
+        <span data-lang-en>Overseas real estate,<br><span class="hero-title-line2">an asset everyone can own.</span></span>
+      </h1>
       <p class="hero-text">Own the world for everyone.</p>
       <p class="hero-description">
-        Laplaceは、海外不動産の信託受益権化・トークン化を支える技術とブロックチェーンを活用した次世代金融プラットフォームを提供しています。
+        <span data-lang-ja>Laplaceは、海外不動産の信託受益権化・トークン化を支える技術とブロックチェーンを活用した次世代金融プラットフォームを提供しています。</span>
+        <span data-lang-en>Laplace provides a next-generation financial platform, powered by trust-beneficiary tokenization technology and blockchain, that makes overseas real estate investable for everyone.</span>
       </p>
       <div class="hero-buttons">
-        <a href="index.html#contact" class="btn btn-primary">事業提携のご相談</a>
-        <a href="index.html#business" class="btn btn-secondary">事業内容を見る →</a>
+        <a href="index.html#contact" class="btn btn-primary"><span data-lang-ja>事業提携のご相談</span><span data-lang-en>Partner With Us</span></a>
+        <a href="index.html#business" class="btn btn-secondary"><span data-lang-ja>事業内容を見る →</span><span data-lang-en>View Our Business →</span></a>
       </div>
     </div>
     <div class="hero-stats">
       <div class="stat-item">
         <div class="stat-value">$900M+</div>
-        <div class="stat-label">契約・パイプライン総額</div>
+        <div class="stat-label"><span data-lang-ja>契約・パイプライン総額</span><span data-lang-en>Contract &amp; Pipeline Value</span></div>
       </div>
       <div class="stat-item">
-        <div class="stat-value">3拠点</div>
-        <div class="stat-label">UAE / マレーシア / 日本</div>
+        <div class="stat-value"><span data-lang-ja>3拠点</span><span data-lang-en>3 Locations</span></div>
+        <div class="stat-label"><span data-lang-ja>UAE / マレーシア / 日本</span><span data-lang-en>UAE / Malaysia / Japan</span></div>
       </div>
       <div class="stat-item">
         <div class="stat-value">10+</div>
-        <div class="stat-label">受賞・採択実績</div>
+        <div class="stat-label"><span data-lang-ja>受賞・採択実績</span><span data-lang-en>Awards &amp; Selections</span></div>
       </div>
     </div>
   </section>
@@ -91,28 +111,40 @@
   <section id="news" class="section news">
     <div class="section-header">
       <h2>— NEWS / 01</h2>
-      <a href="news.html" class="section-link">お知らせ一覧へ →</a>
+      <a href="news.html" class="section-link"><span data-lang-ja>お知らせ一覧へ →</span><span data-lang-en>View All News →</span></a>
     </div>
     <div class="news-list">
       <article class="news-item">
         <div class="news-date">2026.07.15</div>
-        <div class="news-tag">登壇</div>
-        <p><a href="news.html#article-12">東京大学ブロックチェーンイノベーション寄附講座にて代表・廣田裕介が講師として登壇</a></p>
+        <div class="news-tag"><span data-lang-ja>登壇</span><span data-lang-en>Speaking</span></div>
+        <p><a href="news.html#article-12">
+          <span data-lang-ja>東京大学ブロックチェーンイノベーション寄附講座にて代表・廣田裕介が講師として登壇</span>
+          <span data-lang-en>Founder Yusuke Hirota lectures at the University of Tokyo's Blockchain Innovation Endowed Course</span>
+        </a></p>
       </article>
       <article class="news-item">
         <div class="news-date">2026.05.27</div>
-        <div class="news-tag">受賞</div>
-        <p><a href="news.html#article-10">Solana Superteam Japan「Frontier Hackathon Side Track」にて2位を受賞</a></p>
+        <div class="news-tag"><span data-lang-ja>受賞</span><span data-lang-en>Award</span></div>
+        <p><a href="news.html#article-10">
+          <span data-lang-ja>Solana Superteam Japan「Frontier Hackathon Side Track」にて2位を受賞</span>
+          <span data-lang-en>Laplace wins 2nd place at Solana Superteam Japan's "Frontier Hackathon Side Track"</span>
+        </a></p>
       </article>
       <article class="news-item">
         <div class="news-date">2026.04.30</div>
-        <div class="news-tag">プレス</div>
-        <p><a href="news.html#article-9">Christie's International Real Estate Dubaiと$400M規模の戦略的パートナーシップを締結</a></p>
+        <div class="news-tag"><span data-lang-ja>プレス</span><span data-lang-en>Press</span></div>
+        <p><a href="news.html#article-9">
+          <span data-lang-ja>Christie's International Real Estate Dubaiと$400M規模の戦略的パートナーシップを締結</span>
+          <span data-lang-en>Laplace signs $400M strategic partnership with Christie's International Real Estate Dubai</span>
+        </a></p>
       </article>
       <article class="news-item">
         <div class="news-date">2026.04.07</div>
-        <div class="news-tag">登壇</div>
-        <p><a href="news.html#article-8">「XRP Tokyo 2026」(TEAMZ SUMMIT)にて代表・廣田裕介がRippleとのセッションに登壇</a></p>
+        <div class="news-tag"><span data-lang-ja>登壇</span><span data-lang-en>Speaking</span></div>
+        <p><a href="news.html#article-8">
+          <span data-lang-ja>「XRP Tokyo 2026」(TEAMZ SUMMIT)にて代表・廣田裕介がRippleとのセッションに登壇</span>
+          <span data-lang-en>Founder Yusuke Hirota speaks alongside Ripple at "XRP Tokyo 2026" (TEAMZ SUMMIT)</span>
+        </a></p>
       </article>
     </div>
   </section>
@@ -123,8 +155,14 @@
       <h2>BUSINESS / 02</h2>
     </div>
     <div class="section-intro">
-      <h3>3つの領域で、不動産小口販売（RWA）の実行を支える</h3>
-      <p>ソーシングから金融商品化、技術基盤の提供まで、各分野のプレイヤーと連携しながら推進しています。</p>
+      <h3>
+        <span data-lang-ja>3つの領域で、不動産小口販売（RWA）の実行を支える</span>
+        <span data-lang-en>Enabling Fractional Real Estate Sales (RWA) Across Three Domains</span>
+      </h3>
+      <p>
+        <span data-lang-ja>ソーシングから金融商品化、技術基盤の提供まで、各分野のプレイヤーと連携しながら推進しています。</span>
+        <span data-lang-en>From sourcing to financial structuring to platform infrastructure, we work alongside partners at every stage.</span>
+      </p>
     </div>
 
     <!-- Platform Sub-section -->
@@ -136,22 +174,22 @@
         </div>
         <div class="app-body">
           <div class="app-sidebar">
-            <div class="sidebar-item active">物件一覧</div>
-            <div class="sidebar-item">投資家管理</div>
-            <div class="sidebar-item">KYC審査</div>
-            <div class="sidebar-item">分配管理</div>
-            <div class="sidebar-item">レポート</div>
+            <div class="sidebar-item active"><span data-lang-ja>物件一覧</span><span data-lang-en>Properties</span></div>
+            <div class="sidebar-item"><span data-lang-ja>投資家管理</span><span data-lang-en>Investors</span></div>
+            <div class="sidebar-item"><span data-lang-ja>KYC審査</span><span data-lang-en>KYC Review</span></div>
+            <div class="sidebar-item"><span data-lang-ja>分配管理</span><span data-lang-en>Distributions</span></div>
+            <div class="sidebar-item"><span data-lang-ja>レポート</span><span data-lang-en>Reports</span></div>
           </div>
           <div class="app-main">
             <h4>Dubai Marina Residence</h4>
-            <p class="app-sub">信託受益権トークン / DMR-001</p>
+            <p class="app-sub"><span data-lang-ja>信託受益権トークン / DMR-001</span><span data-lang-en>Trust Beneficiary Token / DMR-001</span></p>
             <div class="app-chart-row">
               <div class="mini-bars">
                 <span style="height:35%"></span><span style="height:65%"></span><span style="height:50%"></span><span style="height:80%"></span>
               </div>
               <div class="progress-box">
                 <div class="progress-top">
-                  <span class="progress-label">調達進捗</span>
+                  <span class="progress-label"><span data-lang-ja>調達進捗</span><span data-lang-en>Funding Progress</span></span>
                   <span class="progress-value">62%</span>
                 </div>
                 <div class="progress-bar"><div class="progress-fill" style="width:62%"></div></div>
@@ -159,18 +197,21 @@
               </div>
             </div>
             <div class="app-stats-list">
-              <div class="app-stat-row"><span>投資家</span><span>248名</span></div>
-              <div class="app-stat-row"><span>KYC承認済</span><span class="accent">231名</span></div>
-              <div class="app-stat-row"><span>想定利回り</span><span>6.8% / 年</span></div>
-              <div class="app-stat-row"><span>次回分配日</span><span>2026.09.30</span></div>
+              <div class="app-stat-row"><span><span data-lang-ja>投資家</span><span data-lang-en>Investors</span></span><span>248</span></div>
+              <div class="app-stat-row"><span><span data-lang-ja>KYC承認済</span><span data-lang-en>KYC Approved</span></span><span class="accent">231</span></div>
+              <div class="app-stat-row"><span><span data-lang-ja>想定利回り</span><span data-lang-en>Est. Yield</span></span><span><span data-lang-ja>6.8% / 年</span><span data-lang-en>6.8% / yr</span></span></div>
+              <div class="app-stat-row"><span><span data-lang-ja>次回分配日</span><span data-lang-en>Next Distribution</span></span><span>2026.09.30</span></div>
             </div>
           </div>
         </div>
       </div>
       <div class="subsection-text">
         <p class="subsection-label">01 — PLATFORM</p>
-        <h3>技術基盤の開発・提供</h3>
-        <p>信託受益権のトークン化、KYC・契約自動化を支えるマルチテナントSaaS基盤を自社開発。パートナー企業ごとのブランドに合わせたホワイトラベル提供が可能です。</p>
+        <h3><span data-lang-ja>技術基盤の開発・提供</span><span data-lang-en>Platform Development &amp; Operations</span></h3>
+        <p>
+          <span data-lang-ja>信託受益権のトークン化、KYC・契約自動化を支えるマルチテナントSaaS基盤を自社開発。パートナー企業ごとのブランドに合わせたホワイトラベル提供が可能です。</span>
+          <span data-lang-en>We build a proprietary multi-tenant SaaS platform that powers trust-beneficiary tokenization and automates KYC and contracting, available white-labeled to match each partner's brand.</span>
+        </p>
       </div>
     </div>
 
@@ -178,35 +219,38 @@
     <div class="subsection structuring-block">
       <div class="subsection-text">
         <p class="subsection-label">02 — STRUCTURING</p>
-        <h3>スキーム設計</h3>
-        <p>日本の金融商品取引法・信託法とクロスボーダー不動産法制に準拠したスキームを、各国の法律顧問と連携しながら構築します。</p>
+        <h3><span data-lang-ja>スキーム設計</span><span data-lang-en>Scheme Design</span></h3>
+        <p>
+          <span data-lang-ja>日本の金融商品取引法・信託法とクロスボーダー不動産法制に準拠したスキームを、各国の法律顧問と連携しながら構築します。</span>
+          <span data-lang-en>We design schemes that comply with Japan's Financial Instruments and Exchange Act, Trust Act, and cross-border real estate regulations, working closely with legal counsel in each jurisdiction.</span>
+        </p>
       </div>
       <div class="mockup-card scheme-mockup">
-        <div class="mockup-header">スキームビルダー / UAE案件</div>
+        <div class="mockup-header"><span data-lang-ja>スキームビルダー / UAE案件</span><span data-lang-en>Scheme Builder / UAE Deal</span></div>
         <div class="scheme-body">
           <div class="scheme-flow">
             <div class="flow-step">
-              <div class="flow-title">海外SPC(UAE)</div>
-              <div class="flow-sub">現地不動産の保有主体</div>
+              <div class="flow-title"><span data-lang-ja>海外SPC(UAE)</span><span data-lang-en>Offshore SPC (UAE)</span></div>
+              <div class="flow-sub"><span data-lang-ja>現地不動産の保有主体</span><span data-lang-en>Local real estate holding entity</span></div>
             </div>
             <div class="flow-arrow">↓</div>
             <div class="flow-step">
-              <div class="flow-title">信託(受益権)</div>
-              <div class="flow-sub">信託法・金商法準拠</div>
+              <div class="flow-title"><span data-lang-ja>信託(受益権)</span><span data-lang-en>Trust (Beneficiary Rights)</span></div>
+              <div class="flow-sub"><span data-lang-ja>信託法・金商法準拠</span><span data-lang-en>Trust Act / FIEA compliant</span></div>
             </div>
             <div class="flow-arrow">↓</div>
             <div class="flow-step active">
-              <div class="flow-title">トークン発行</div>
-              <div class="flow-sub">受益権のデジタル化</div>
+              <div class="flow-title"><span data-lang-ja>トークン発行</span><span data-lang-en>Token Issuance</span></div>
+              <div class="flow-sub"><span data-lang-ja>受益権のデジタル化</span><span data-lang-en>Digitizing beneficiary rights</span></div>
             </div>
           </div>
           <div class="scheme-checklist">
-            <div class="checklist-title">適法性チェック</div>
-            <div class="check-item done">✓ 金融商品取引法</div>
-            <div class="check-item done">✓ 信託法</div>
-            <div class="check-item done">✓ UAE不動産法制</div>
-            <div class="check-item pending">○ 現地法律顧問レビュー中</div>
-            <button class="scheme-btn">ドラフト契約書を生成</button>
+            <div class="checklist-title"><span data-lang-ja>適法性チェック</span><span data-lang-en>Compliance Checklist</span></div>
+            <div class="check-item done">✓ <span data-lang-ja>金融商品取引法</span><span data-lang-en>Financial Instruments and Exchange Act</span></div>
+            <div class="check-item done">✓ <span data-lang-ja>信託法</span><span data-lang-en>Trust Act</span></div>
+            <div class="check-item done">✓ <span data-lang-ja>UAE不動産法制</span><span data-lang-en>UAE Real Estate Law</span></div>
+            <div class="check-item pending">○ <span data-lang-ja>現地法律顧問レビュー中</span><span data-lang-en>Local counsel review in progress</span></div>
+            <button class="scheme-btn"><span data-lang-ja>ドラフト契約書を生成</span><span data-lang-en>Generate Draft Contract</span></button>
           </div>
         </div>
       </div>
@@ -221,27 +265,30 @@
         </div>
         <div class="partner-table">
           <div class="partner-table-row head">
-            <span>商品</span><span>資産種別</span><span>ステータス</span>
+            <span><span data-lang-ja>商品</span><span data-lang-en>Product</span></span><span><span data-lang-ja>資産種別</span><span data-lang-en>Asset Type</span></span><span><span data-lang-ja>ステータス</span><span data-lang-en>Status</span></span>
           </div>
           <div class="partner-table-row">
-            <span>海外不動産信託受益権 A</span><span>住宅 / UAE</span><span class="status done">募集中</span>
+            <span><span data-lang-ja>海外不動産信託受益権 A</span><span data-lang-en>Overseas Real Estate Trust Right A</span></span><span><span data-lang-ja>住宅 / UAE</span><span data-lang-en>Residential / UAE</span></span><span class="status done"><span data-lang-ja>募集中</span><span data-lang-en>Open</span></span>
           </div>
           <div class="partner-table-row">
-            <span>海外不動産信託受益権 B</span><span>商業施設 / 東南アジア</span><span class="status done">募集中</span>
+            <span><span data-lang-ja>海外不動産信託受益権 B</span><span data-lang-en>Overseas Real Estate Trust Right B</span></span><span><span data-lang-ja>商業施設 / 東南アジア</span><span data-lang-en>Commercial / Southeast Asia</span></span><span class="status done"><span data-lang-ja>募集中</span><span data-lang-en>Open</span></span>
           </div>
           <div class="partner-table-row">
-            <span>海外不動産信託受益権 C</span><span>住宅 / 日本国内</span><span class="status pending">準備中</span>
+            <span><span data-lang-ja>海外不動産信託受益権 C</span><span data-lang-en>Overseas Real Estate Trust Right C</span></span><span><span data-lang-ja>住宅 / 日本国内</span><span data-lang-en>Residential / Japan</span></span><span class="status pending"><span data-lang-ja>準備中</span><span data-lang-en>Coming Soon</span></span>
           </div>
         </div>
         <div class="partner-stats">
-          <div class="partner-stat"><span class="label">最小投資額</span><span class="value">$100〜</span></div>
-          <div class="partner-stat"><span class="label">対応法域</span><span class="value">3カ国</span></div>
+          <div class="partner-stat"><span class="label"><span data-lang-ja>最小投資額</span><span data-lang-en>Min. Investment</span></span><span class="value"><span data-lang-ja>$100〜</span><span data-lang-en>From $100</span></span></div>
+          <div class="partner-stat"><span class="label"><span data-lang-ja>対応法域</span><span data-lang-en>Jurisdictions</span></span><span class="value"><span data-lang-ja>3カ国</span><span data-lang-en>3 Countries</span></span></div>
         </div>
       </div>
       <div class="subsection-text">
         <p class="subsection-label">03 — TRUST PLATFORM</p>
-        <h3>クロスボーダー信託型金融プラットフォーム</h3>
-        <p>信託受益権を活用した海外アセットの小口販売プラットフォームです。ライセンス事業者と規制遵守したスキームを独自で開発し、不動産事業者に提供。</p>
+        <h3><span data-lang-ja>クロスボーダー信託型金融プラットフォーム</span><span data-lang-en>Cross-Border Trust Financial Platform</span></h3>
+        <p>
+          <span data-lang-ja>信託受益権を活用した海外アセットの小口販売プラットフォームです。ライセンス事業者と規制遵守したスキームを独自で開発し、不動産事業者に提供。</span>
+          <span data-lang-en>A platform for the fractional sale of overseas assets using trust beneficiary rights. We develop compliant schemes in-house with licensed partners and provide them to real estate operators.</span>
+        </p>
       </div>
     </div>
   </section>
@@ -252,8 +299,12 @@
       <h2>PARTNERSHIP / 03</h2>
     </div>
     <div class="section-intro">
-      <h3>各領域のリーダーとMOUを締結</h3>
-      <p>ソーシングから技術基盤まで、国境を越えたパートナーシップを推進しています。<br><a href="partnerships.html" class="link">パートナーシップ一覧へ →</a></p>
+      <h3><span data-lang-ja>各領域のリーダーとMOUを締結</span><span data-lang-en>Signing MOUs With Leaders in Each Domain</span></h3>
+      <p>
+        <span data-lang-ja>ソーシングから技術基盤まで、国境を越えたパートナーシップを推進しています。</span>
+        <span data-lang-en>We're building cross-border partnerships spanning sourcing to technology infrastructure.</span>
+        <br><a href="partnerships.html" class="link"><span data-lang-ja>パートナーシップ一覧へ →</span><span data-lang-en>View All Partnerships →</span></a>
+      </p>
     </div>
     <div class="feature-card">
       <div class="feature-image">
@@ -262,10 +313,13 @@
       <div class="feature-info">
         <p class="feature-tag">FEATURED — SOURCING / UAE</p>
         <h4>Christie's International Real Estate Dubai</h4>
-        <p>Christie's International Real Estate Dubaiのグローバルネットワークを通じ、UAEにおける不動産ソーシング及び小口化日本展開における戦略的提携を締結。</p>
+        <p>
+          <span data-lang-ja>Christie's International Real Estate Dubaiのグローバルネットワークを通じ、UAEにおける不動産ソーシング及び小口化日本展開における戦略的提携を締結。</span>
+          <span data-lang-en>Through Christie's International Real Estate Dubai's global network, we've signed a strategic partnership for real estate sourcing in the UAE and its fractionalized rollout in Japan.</span>
+        </p>
         <div class="feature-stats">
-          <div class="feature-stat"><span class="value">$400M</span><span class="label">契約規模</span></div>
-          <div class="feature-stat"><span class="value">Dubai</span><span class="label">UAE拠点</span></div>
+          <div class="feature-stat"><span class="value">$400M</span><span class="label"><span data-lang-ja>契約規模</span><span data-lang-en>Deal Size</span></span></div>
+          <div class="feature-stat"><span class="value">Dubai</span><span class="label"><span data-lang-ja>UAE拠点</span><span data-lang-en>UAE Base</span></span></div>
         </div>
       </div>
     </div>
@@ -275,27 +329,39 @@
   <section class="section recognition">
     <div class="section-header">
       <h2>— RECOGNITION / 04</h2>
-      <a href="news.html" class="section-link">実績一覧へ →</a>
+      <a href="news.html" class="section-link"><span data-lang-ja>実績一覧へ →</span><span data-lang-en>View All Achievements →</span></a>
     </div>
     <div class="section-intro">
-      <p>国内外のプログラムでの採択、登壇、メディア掲載実績です。</p>
+      <p>
+        <span data-lang-ja>国内外のプログラムでの採択、登壇、メディア掲載実績です。</span>
+        <span data-lang-en>Selections, speaking engagements, and media coverage from programs in Japan and abroad.</span>
+      </p>
     </div>
     <h3 class="visually-hidden">受賞実績</h3>
     <div class="recognition-list">
       <article class="recognition-item">
-        <span class="label">受賞</span>
-        <p><a href="news.html#article-6">「GITEX Global Supernova Challenge」で世界トップ10ファイナリストに選出</a></p>
-        <a href="news.html#article-6" class="link">詳細を見る →</a>
+        <span class="label"><span data-lang-ja>受賞</span><span data-lang-en>Award</span></span>
+        <p><a href="news.html#article-6">
+          <span data-lang-ja>「GITEX Global Supernova Challenge」で世界トップ10ファイナリストに選出</span>
+          <span data-lang-en>Selected as a Top 10 global finalist at the "GITEX Global Supernova Challenge"</span>
+        </a></p>
+        <a href="news.html#article-6" class="link"><span data-lang-ja>詳細を見る →</span><span data-lang-en>Read More →</span></a>
       </article>
       <article class="recognition-item">
-        <span class="label">受賞</span>
-        <p><a href="news.html#article-7">「日本金融インフライノベーションプログラム(JFIIP)」で最優秀賞を受賞</a></p>
-        <a href="news.html#article-7" class="link">詳細を見る →</a>
+        <span class="label"><span data-lang-ja>受賞</span><span data-lang-en>Award</span></span>
+        <p><a href="news.html#article-7">
+          <span data-lang-ja>「日本金融インフライノベーションプログラム(JFIIP)」で最優秀賞を受賞</span>
+          <span data-lang-en>Wins Grand Prize at the "Japan Financial Infrastructure Innovation Program (JFIIP)"</span>
+        </a></p>
+        <a href="news.html#article-7" class="link"><span data-lang-ja>詳細を見る →</span><span data-lang-en>Read More →</span></a>
       </article>
       <article class="recognition-item">
-        <span class="label">受賞</span>
-        <p><a href="news.html#article-10">Solana Superteam Japan「Frontier Hackathon Side Track」にて2位を受賞</a></p>
-        <a href="news.html#article-10" class="link">詳細を見る →</a>
+        <span class="label"><span data-lang-ja>受賞</span><span data-lang-en>Award</span></span>
+        <p><a href="news.html#article-10">
+          <span data-lang-ja>Solana Superteam Japan「Frontier Hackathon Side Track」にて2位を受賞</span>
+          <span data-lang-en>Wins 2nd place at Solana Superteam Japan's "Frontier Hackathon Side Track"</span>
+        </a></p>
+        <a href="news.html#article-10" class="link"><span data-lang-ja>詳細を見る →</span><span data-lang-en>Read More →</span></a>
       </article>
     </div>
   </section>
@@ -305,19 +371,37 @@
     <div class="section-header">
       <h2>— MESSAGE / 05</h2>
     </div>
-    <h3 class="message-title">代表挨拶</h3>
+    <h3 class="message-title"><span data-lang-ja>代表挨拶</span><span data-lang-en>Message from the Founder</span></h3>
     <div class="ceo-profile">
       <img src="images/ceo-profile.jpg" alt="CEO - 廣田裕介" loading="lazy">
       <div class="ceo-info">
-        <h4>世界中のどんな資産にも、<br>誰もが手を伸ばせる時代へ。</h4>
-        <p>代表取締役の廣田裕介です。当社のホームページをご覧いただき、誠にありがとうございます。</p>
-        <p>新卒からおよそ7年間Amazonに勤務し、グローバルなプラットフォーム・マーケットプレイスを拡大していく現場に携わってきました。</p>
-        <p>海外不動産をはじめとする海外アセットは、これまで情報が限られ、実務のハードルも高く、一部の富裕層や機関投資家にしか開かれていませんでした。</p>
-        <p>Laplaceは、この非対称性を解消し、誰もが100ドルからワンクリックで世界中の資産にアクセスできるマーケットプレイスを目指しています。</p>
-        <p>今後もパートナー企業とともに、日本発のグローバルなRWA市場づくりに取り組んでまいります。</p>
-        <a href="message.html" class="link">代表挨拶全文を読む →</a>
+        <h4>
+          <span data-lang-ja>世界中のどんな資産にも、<br>誰もが手を伸ばせる時代へ。</span>
+          <span data-lang-en>Toward an era where anyone<br>can reach any asset, anywhere.</span>
+        </h4>
+        <p>
+          <span data-lang-ja>代表取締役の廣田裕介です。当社のホームページをご覧いただき、誠にありがとうございます。</span>
+          <span data-lang-en>I'm Yusuke Hirota, CEO of Laplace. Thank you for visiting our website.</span>
+        </p>
+        <p>
+          <span data-lang-ja>新卒からおよそ7年間Amazonに勤務し、グローバルなプラットフォーム・マーケットプレイスを拡大していく現場に携わってきました。</span>
+          <span data-lang-en>I spent roughly seven years at Amazon after graduating, working on the front lines of scaling a global platform marketplace.</span>
+        </p>
+        <p>
+          <span data-lang-ja>海外不動産をはじめとする海外アセットは、これまで情報が限られ、実務のハードルも高く、一部の富裕層や機関投資家にしか開かれていませんでした。</span>
+          <span data-lang-en>Overseas assets, real estate chief among them, have long been accessible only to a small circle of wealthy individuals and institutional investors, held back by limited information and high practical barriers.</span>
+        </p>
+        <p>
+          <span data-lang-ja>Laplaceは、この非対称性を解消し、誰もが100ドルからワンクリックで世界中の資産にアクセスできるマーケットプレイスを目指しています。</span>
+          <span data-lang-en>Laplace aims to close this gap, building a marketplace where anyone can access assets around the world with one click, starting from $100.</span>
+        </p>
+        <p>
+          <span data-lang-ja>今後もパートナー企業とともに、日本発のグローバルなRWA市場づくりに取り組んでまいります。</span>
+          <span data-lang-en>Together with our partners, we will keep building a global RWA market that starts here in Japan.</span>
+        </p>
+        <a href="message.html" class="link"><span data-lang-ja>代表挨拶全文を読む →</span><span data-lang-en>Read the Full Message →</span></a>
         <div class="ceo-signature">
-          <p><strong>代表取締役CEO</strong>&nbsp;&nbsp;廣田裕介</p>
+          <p><strong><span data-lang-ja>代表取締役CEO</span><span data-lang-en>CEO</span></strong>&nbsp;&nbsp;廣田裕介</p>
           <p>Founder &amp; CEO, Laplace Inc.</p>
         </div>
       </div>
@@ -329,35 +413,44 @@
     <div class="section-header">
       <h2>— COMPANY / 06</h2>
     </div>
-    <h3 class="message-title">会社概要</h3>
+    <h3 class="message-title"><span data-lang-ja>会社概要</span><span data-lang-en>Company</span></h3>
     <div class="company-info">
       <div class="info-row">
-        <span class="label">会社名</span>
+        <span class="label"><span data-lang-ja>会社名</span><span data-lang-en>Company Name</span></span>
         <span class="value">Laplace Inc. (Delaware, USA)</span>
       </div>
       <div class="info-row">
-        <span class="label">設立</span>
-        <span class="value">2026年1月</span>
+        <span class="label"><span data-lang-ja>設立</span><span data-lang-en>Founded</span></span>
+        <span class="value"><span data-lang-ja>2026年1月</span><span data-lang-en>January 2026</span></span>
       </div>
       <div class="info-row">
-        <span class="label">代表者</span>
-        <span class="value">代表取締役CEO 廣田裕介</span>
+        <span class="label"><span data-lang-ja>代表者</span><span data-lang-en>Representative</span></span>
+        <span class="value"><span data-lang-ja>代表取締役CEO 廣田裕介</span><span data-lang-en>Yusuke Hirota, CEO</span></span>
       </div>
       <div class="info-row">
-        <span class="label">拠点</span>
-        <span class="value">米国 / 日本</span>
+        <span class="label"><span data-lang-ja>拠点</span><span data-lang-en>Locations</span></span>
+        <span class="value"><span data-lang-ja>米国 / 日本</span><span data-lang-en>USA / Japan</span></span>
       </div>
       <div class="info-row">
-        <span class="label">事業内容</span>
-        <span class="value">クロスボーダー不動産RWAの技術基盤開発・提供、信託受益権のトークン化に関するスキーム設計、プラットフォーム運営</span>
+        <span class="label"><span data-lang-ja>事業内容</span><span data-lang-en>Business</span></span>
+        <span class="value">
+          <span data-lang-ja>クロスボーダー不動産RWAの技術基盤開発・提供、信託受益権のトークン化に関するスキーム設計、プラットフォーム運営</span>
+          <span data-lang-en>Developing and operating technology infrastructure for cross-border real estate RWA, designing schemes for trust beneficiary right tokenization, and running the platform</span>
+        </span>
       </div>
       <div class="info-row">
-        <span class="label">主要パートナー</span>
-        <span class="value">Christie's International Real Estate、Sheng Tai International、UK信託、Ripple</span>
+        <span class="label"><span data-lang-ja>主要パートナー</span><span data-lang-en>Key Partners</span></span>
+        <span class="value">
+          <span data-lang-ja>Christie's International Real Estate、Sheng Tai International、UK信託、Ripple</span>
+          <span data-lang-en>Christie's International Real Estate, Sheng Tai International, UK Trust, Ripple</span>
+        </span>
       </div>
       <div class="info-row">
-        <span class="label">採択・支援プログラム</span>
-        <span class="value">500 Global、Hub71 × Elixir Capital、経済産業省 JstarX、Delight X</span>
+        <span class="label"><span data-lang-ja>採択・支援プログラム</span><span data-lang-en>Programs &amp; Accelerators</span></span>
+        <span class="value">
+          <span data-lang-ja>500 Global、Hub71 × Elixir Capital、経済産業省 JstarX、Delight X</span>
+          <span data-lang-en>500 Global, Hub71 × Elixir Capital, METI J-StarX, DelightX</span>
+        </span>
       </div>
     </div>
   </section>
@@ -365,32 +458,38 @@
   <!-- Contact Section -->
   <section id="contact" class="section contact">
     <p class="contact-star">✦</p>
-    <h2>不動産RWA事業における提携をご検討の方へ</h2>
-    <p>ソーシング、金融商品化、技術基盤の提供まで。貴社の強みを活かした提携について、ぜひお話しさせてください。</p>
+    <h2>
+      <span data-lang-ja>不動産RWA事業における提携をご検討の方へ</span>
+      <span data-lang-en>For Those Considering a Real Estate RWA Partnership</span>
+    </h2>
+    <p>
+      <span data-lang-ja>ソーシング、金融商品化、技術基盤の提供まで。貴社の強みを活かした提携について、ぜひお話しさせてください。</span>
+      <span data-lang-en>From sourcing to financial structuring to technology infrastructure — let's talk about a partnership that puts your strengths to work.</span>
+    </p>
     <form class="contact-form">
       <div class="form-group">
         <div class="field">
-          <label>お名前 *</label>
-          <input type="text" placeholder="山田 太郎" required>
+          <label><span data-lang-ja>お名前 *</span><span data-lang-en>Name *</span></label>
+          <input type="text" data-ph-ja="山田 太郎" data-ph-en="John Smith" placeholder="山田 太郎" required>
         </div>
         <div class="field">
-          <label>会社名</label>
-          <input type="text" placeholder="株式会社◯◯">
+          <label><span data-lang-ja>会社名</span><span data-lang-en>Company</span></label>
+          <input type="text" data-ph-ja="株式会社◯◯" data-ph-en="Company Inc." placeholder="株式会社◯◯">
         </div>
       </div>
       <div class="form-group">
         <div class="field">
-          <label>メールアドレス *</label>
+          <label><span data-lang-ja>メールアドレス *</span><span data-lang-en>Email *</span></label>
           <input type="email" placeholder="you@example.com" required>
         </div>
       </div>
       <div class="form-group">
         <div class="field">
-          <label>お問い合わせ内容 *</label>
-          <textarea placeholder="ご提携内容やご相談事項をご記入ください" required></textarea>
+          <label><span data-lang-ja>お問い合わせ内容 *</span><span data-lang-en>Message *</span></label>
+          <textarea data-ph-ja="ご提携内容やご相談事項をご記入ください" data-ph-en="Tell us about the partnership or inquiry you have in mind" placeholder="ご提携内容やご相談事項をご記入ください" required></textarea>
         </div>
       </div>
-      <button type="submit" class="btn btn-primary">送信する</button>
+      <button type="submit" class="btn btn-primary"><span data-lang-ja>送信する</span><span data-lang-en>Send</span></button>
     </form>
   </section>
 
@@ -399,6 +498,6 @@
     <p>&copy; 2026 Laplace Inc. All rights reserved.</p>
   </footer>
 
-  <script src="js/main.js?v=7"></script>
+  <script src="js/main.js?v=8"></script>
 </body>
 </html>
